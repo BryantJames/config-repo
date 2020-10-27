@@ -1,0 +1,13 @@
+##开启所有的act
+management:
+  endpoint:
+    health:
+      show-details: always
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+        #  include:health ,info,xxx
+  security:
+    #actuator暴露接口
+    enabled: false
